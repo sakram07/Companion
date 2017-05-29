@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* Reset */
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+/* Grid */
+
+.content-dark {
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    width: 70%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.row div {
+    flex: 1;
+    margin-top: 2rem;
+    margin-right: 3%;
+}
+
+.row .size-double { flex: 2; }
+.row .size-triple { flex: 3; }
+.row .size-quadra { flex: 4; }
+.row .size-penta { flex: 5; }
+
+@media screen and (max-width: 768px) {
+    .row div, .row .size-double, .row .size-triple, .row size-quadra { flex: 0 0 100%; }
+    .container { width: 85%; }
+}
+
+/* Typography */
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+h2 { font-size: 42px; }
+
+/* Utility Classes*/
+
+.center-vertical { 
+}
+
+.text-centered { text-align: center; }
+.image-circle { border-radius: 50%; }
+.position-relative { position: relative; }
+.position-absolute { position: absolute; }
+.position-fixed    { position: fixed; }
+
+
+/* Elements */
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.button-dark {
+    color: white;
+    background-color: black;
+}
+
+
+/* Testing */
+
+
+
